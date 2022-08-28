@@ -160,13 +160,26 @@ day.appendChild(daySet)
 let tempn = document.createElement("div")
 tempn.setAttribute("class", "temp")
 todayTemp.appendChild(tempn)
-let temSetN = document.createTextNode(`Night - 25 c`)
-tempn.appendChild(temSetN)
+let tempSetN = document.createTextNode(`Night - 25 c`)
+tempn.appendChild(tempSetN)
 
 // div class temp
 let tempd = document.createElement("div")
 tempd.setAttribute("class", "temp")
 todayTemp.appendChild(tempd)
-let temSetd= document.createTextNode(`day - 25 c`)
-tempd.appendChild(temSetd)
+let tempSetd= document.createTextNode(`day - 25 c`)
+tempd.appendChild(tempSetd)
 
+//__________________________________________________
+
+// div class weather_foreccast  id weathrForecast
+let weatherForecast = document.createElement("div")
+weatherForecast.setAttribute("class", "weather_forecast")
+weatherForecast.setAttribute("id", "weatherForecast")
+futureForecast.appendChild(weatherForecast)
+
+// div class weather_foreccast  id weathrForecast
+let weatherForecastItem= document.createElement("div")
+weatherForecastItem.setAttribute("class", "weather_forecast")
+weatherForecastItem.setAttribute("id", "weatherForecastItem")
+weatherForecast.appendChild(weatherForecastItem)
